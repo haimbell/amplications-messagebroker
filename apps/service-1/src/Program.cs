@@ -1,4 +1,5 @@
 using System.Reflection;
+using MessageBroker.Brokers.Broker1;
 using Microsoft.EntityFrameworkCore;
 using Service1;
 using Service1.APIs;
@@ -8,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.Configure<RouteOptions>(options => options.LowercaseUrls = true);
-
+builder.AddBroker1();
 builder.Services.RegisterServices();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
