@@ -21,7 +21,7 @@ internal static class Broker1ServiceCollection
             throw new Exception("BootstrapServers not found in configuration section Broker1");
         app.Services.AddHostedService(x => new Broker1ConsumerService(x.GetRequiredService<IServiceScopeFactory>(), kafkaOptions))
             .AddScoped<Broker1MessageHandlersContoller>();
-
+        app.Services.AddScoped(_ => new Broker1Producer(kafkaOptions.BootstrapServers));
         return app.Services;
     }
 }
