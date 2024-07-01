@@ -1,9 +1,9 @@
 using System.Reflection;
-using MessageBroker.Brokers.Broker1;
 using Microsoft.EntityFrameworkCore;
 using Service1;
 using Service1.APIs;
 using Service1.Infrastructure;
+using Service1.MessageBrokers.Broker1;
 
 var builder = WebApplication.CreateBuilder(args);
 

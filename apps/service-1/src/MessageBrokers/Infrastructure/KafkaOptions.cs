@@ -1,4 +1,4 @@
-namespace MessageBroker.Brokers.Infrastructure;
+namespace Service1.MessageBrokers.Infrastructure;
 
 /// <summary>
 /// Represents the Kafka options.

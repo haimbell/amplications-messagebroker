@@ -1,4 +1,4 @@
-namespace MessageBroker.Brokers.Infrastructure;
+namespace Service1.MessageBrokers.Infrastructure;
 
 /// <summary>
 /// set the topic name for the method. will be used to subscribe to the topic.

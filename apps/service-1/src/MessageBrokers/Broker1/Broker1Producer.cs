@@ -1,6 +1,6 @@
-using MessageBroker.Brokers.Infrastructure;
+using Service1.MessageBrokers.Infrastructure;
 
-namespace MessageBroker.Brokers.Broker1;
+namespace Service1.MessageBrokers.Broker1;
 
 internal class Broker1Producer(string bootstrapServers)
     : InternalProducer(bootstrapServers);

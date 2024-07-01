@@ -1,6 +1,6 @@
 using Confluent.Kafka;
 
-namespace MessageBroker.Brokers.Infrastructure;
+namespace Service1.MessageBrokers.Infrastructure;
 
 public class InternalConsumer : IDisposable
 {

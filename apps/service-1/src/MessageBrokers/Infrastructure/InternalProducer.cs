@@ -1,7 +1,7 @@
 using System.Text.Json;
 using Confluent.Kafka;
 
-namespace MessageBroker.Brokers.Infrastructure;
+namespace Service1.MessageBrokers.Infrastructure;
 
 internal abstract class InternalProducer : IDisposable
 {

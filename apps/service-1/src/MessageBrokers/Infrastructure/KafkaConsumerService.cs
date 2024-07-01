@@ -1,7 +1,7 @@
 using System.Reflection;
 using System.Text.Json;
 
-namespace MessageBroker.Brokers.Infrastructure;
+namespace Service1.MessageBrokers.Infrastructure;
 
 internal abstract class KafkaConsumerService<T> : BackgroundService
 {
