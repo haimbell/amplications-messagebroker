@@ -77,7 +77,7 @@ public abstract class UsServiceBase : IUsService
     /// </summary>
     public async Task<MeDto> Me(MeIdDto idDto)
     {
-        var us = await this.us(new MeFindMany { Where = new MeWhereInput { Id = idDto.Id } });
+        var us = await this.Us(new MeFindMany { Where = new MeWhereInput { Id = idDto.Id } });
         var me = us.FirstOrDefault();
         if (me == null)
         {
